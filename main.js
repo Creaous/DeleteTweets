@@ -1,4 +1,4 @@
-async function massDelete() {
+(async () => {
 	var authorization = "Bearer ***"; // replace by authorization value
 	var ua = navigator?.userAgentData?.brands.map(brand => `"${brand.brand}";v="${brand.version}"`).join(', ') ?? "";
 	var client_tid = "***"; // replace by X-Client-Transaction-Id value
@@ -641,6 +641,4 @@ async function massDelete() {
 	}
 	
 	console.log("DELETION COMPLETE (if error happened before this may be not true)")
-}
-
-await massDelete();
+})()
