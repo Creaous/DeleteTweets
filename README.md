@@ -4,11 +4,11 @@ It should work just fine, I regularly use the script myself, but if anything wro
 
 # Prerequisites
 
-I use Google Chrome. I don't know if it will work elsewhere. It probably will, but if it doesn't, just try on Chrome.
+A Chromium or Gecko based browser.
 
 # Tutorial
 
-(if you can't find  the uuid, put any value it'll work)
+(if you can't find the uuid, put any value it'll work)
 
 ##  Video Tutorial
 https://github.com/teisseire117/DeleteTweets/assets/43145883/249584c3-ce01-424b-8ce5-751e976c8df0
@@ -69,7 +69,9 @@ I allow tickets in French 🇫🇷 but prefer English if you can speak it, so ev
 Yes
 
 ## I can't find X-Client-Transaction-Id/X-Client-Uuid/authorization
-In the request list, search for requests named `client_event.json`, they are the more frequent ones, and they always contain the tokens you need
+**If the X-Client-Uuid isn't showing up, use any value instead.**
+<br/>
+In the request list, search for requests named `client_event.json`, they are the more frequent ones, and they always contain the tokens you need.
 
 ## Uncaught TypeError: entries is not iterable
 
